@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 public class Move : MonoBehaviour
@@ -29,7 +29,7 @@ public class Move : MonoBehaviour
             transform.Rotate(rotation);
             rb.AddForce(move, ForceMode.VelocityChange);
 
-            anim.SetBool("isRunning", move != Vector3.zero);
+            anim.SetBool("run", move != Vector3.zero);
         }
         
     }
